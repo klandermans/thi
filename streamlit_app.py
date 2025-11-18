@@ -33,8 +33,8 @@ with st.sidebar:
     <p>The Dairy <b style="color:red">Heat</b>stress App was forged in the digital frontier by the Dairy Campus Cowboys.</p>
     <br>              
     <p>⭐ Anna, our shining star, tolerated zero 'fluff' on the Frontier.</p>
-    <p>🤠 Paul, the sherrif supplied the vital and safe context.</p> 
-    <p>💻 Bert, responsible for disrupting hacks and Beer & bytes</p>
+    <p>🤠 Paul, the old sherrif supplied the vital and safe context.</p> 
+    <p>💻 Bert, responsible for disrupting hacks, beers & bytes</p>
     <p>The Dairy Campus Cowboys engineered this  application to deliver heat stress insights, without the fluff.</P>
     """, unsafe_allow_html=True)
     
