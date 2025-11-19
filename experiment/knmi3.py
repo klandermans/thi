@@ -67,7 +67,9 @@ def list_dataset_files(
 ) -> tuple[list[str], dict[str, Any]]:
     logger.info(f"Retrieve dataset files with query params: {params}")
 
-    list_files_endpoint = f"{base_url}/datasets/{dataset_name}/versions/{dataset_version}/files"
+    list_files_endpoint = (
+        f"{base_url}/datasets/{dataset_name}/versions/{dataset_version}/files"
+    )
     list_files_response = session.get(list_files_endpoint, params=params)
 
     if list_files_response.status_code != 200:

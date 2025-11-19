@@ -7,11 +7,15 @@ import requests
 import os
 
 LOG_FILE = "thi.log"
-API_URL = "https://data.meteoserver.nl/api/uurverwachting.php?locatie=Goutum&key=8f58861a52"
+API_URL = (
+    "https://data.meteoserver.nl/api/uurverwachting.php?locatie=Goutum&key=8f58861a52"
+)
+
 
 def calculate_thi(temp, rh):
     """Berekent de Temperature-Humidity Index (THI)."""
     return 0.8 * temp + (rh / 100) * (temp - 14.4) + 46.4
+
 
 def get_thi_alert(thi):
     """Retourneert de alert status op basis van de THI."""
@@ -20,11 +24,13 @@ def get_thi_alert(thi):
     else:
         return "Geen alert"
 
+
 def log_output(message):
     """Schrijft output naar de console en naar een logfile."""
     print(message)
     with open(LOG_FILE, "a") as f:
         f.write(message + "\n")
+
 
 # Verwijder oude logfile
 if os.path.exists(LOG_FILE):
@@ -60,10 +66,12 @@ for forecast in data:
         # Bereken voorspelde binnentemperatuur en THI voor binnen
         temp_in = 0.81 * temp_out + 5.60
         thi_in = calculate_thi(temp_in, rh)
-        
+
         alert = get_thi_alert(thi_in)
 
-        log_output(f"{time_nl}, {temp_out:.1f}, {rh:.1f}, {thi_out:.1f}, {thi_in:.1f}, {alert}")
+        log_output(
+            f"{time_nl}, {temp_out:.1f}, {rh:.1f}, {thi_out:.1f}, {thi_in:.1f}, {alert}"
+        )
 
     except (KeyError, ValueError) as e:
         log_output(f"Fout bij het verwerken van een voorspelling: {e}")
