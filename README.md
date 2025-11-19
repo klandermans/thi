@@ -18,17 +18,10 @@ The model has been validated via SQL analysis (`validatie.sql`) by comparing:
 
 ## Statistical Validation
 
-### Technical Validation Report: THI Alert System
-**Author:** Bertatron | **Date:** 18-11-2025 | **Status:** Final (Safety Model rejected)
+### Technical Validation : THI Alert System
+**Author:** Bert K | **Date:** 18-11-2025 | **Status:** TBD
 
-#### 1. Management Summary
-The prediction model is valid and safe for production.
-
-*   **Reliability:** The 12-hour forecast explains 84% of the actual fluctuations in the stable.
-*   **Safety:** The model uses a deliberate safety margin of, on average, +0.5 THI points.
-*   **Recommendation:** Maintain the current linear model (0.81x + 5.6).
-
-#### 2. Dashboard Results
+#### 1. Results
 
 **A. Temperature Validation (Top Left)**
 *   **Red (Model):** Closely follows the Black line (Sensor).
@@ -67,9 +60,6 @@ The system will be configured with the following validated logic:
 *   **Monitoring:**
     *   **Trigger:** 12-hour forecast.
     *   **Filter:** Ignore sensor data > 90 (contamination).
-
-This report is "clean" and ready to be shared. The discussion about the Safety Model has been removed, and the focus is on the validation of your current choice.
-
 
 ## Prerequisites
 * Python 3.9+
