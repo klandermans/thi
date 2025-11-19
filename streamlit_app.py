@@ -4,6 +4,22 @@ import pandas as pd
 from datetime import datetime
 import plotly.graph_objects as go
 
+# --- Config & CSS (Max Width 800px) ---
+st.set_page_config(page_title="THI App", layout="wide")
+
+# CSS: Maximaliseer de hoofdbody op 800px voor mobiele apps (KISS)
+st.markdown(
+    """
+    <style>
+    /* Selecteert de hoofdcontainer en stelt de maximale breedte in */
+    .block-container {
+        max-width: 800px;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 # --- THI Calculation Functions ---
 def calculate_thi(temp, rh):
     """Bereken de Temperature Humidity Index (THI)."""
@@ -41,37 +57,25 @@ def stress_color_box(thi):
 # ----------------------   PAGE LOGIC (ROUTER)  ----------------------
 # -------------------------------------------------------------------
 
-st.set_page_config(page_title="The Heatstress App", layout="wide")
-
-
-# Toevoegen van CSS om de maximale breedte van de hoofdcontainer te beperken
-# Dit is de KISS-methode voor mobiel-vriendelijk Streamlit.
-st.markdown(
-    """
-    <style>
-    /* Selecteert de hoofdcontainer en stelt de maximale breedte in */
-    .block-container {
-        max-width: 800px;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
 # Init session state
 if "page" not in st.session_state:
     st.session_state.page = "home"
 
-# ---------------- SIDEBAR = HAMBURGER MENU (GEWIJZIGD) -----------------------
+# ---------------- SIDEBAR = HAMBURGER MENU -----------------------
 with st.sidebar:
     st.markdown("## ☰ Menu")
+    
+    # Update navigatie met "Inschrijven"
     nav = st.radio(
         "Navigatie",
-        ["Dashboard", "About"],
+        ["Dashboard", "Inschrijven", "About"],
         label_visibility="collapsed"
     )
 
     if nav == "Dashboard":
         st.session_state.page = "home"
+    elif nav == "Inschrijven":
+        st.session_state.page = "register"
     else:
         st.session_state.page = "about"
         
@@ -93,8 +97,6 @@ def page_home():
     LOCATIE_NAAM = "Leeuwarden"
 
     st.markdown("<h1><font color=red>HEAT</font> stress APP</h1>", unsafe_allow_html=True)
-
-    # Het postcode-formulier is verplaatst naar de sidebar
 
     # st.subheader("Heatstress voorspelling")
     forecast_list = []
@@ -169,18 +171,57 @@ def page_home():
             fig.add_trace(go.Scatter(x=df["Tijd"], y=df["Buiten"], name="THI Buiten", mode="lines", line=dict(color='blue', dash='dash')))
 
             st.plotly_chart(fig, use_container_width=True)
-            url = f"https://gadgets.buienradar.nl/gadget/zoommap/?lat={LAT}&lng={LON}&overname=2&zoom=8&naam={LOCATIE_NAAM}&size=3&voor=0"
-            st.components.v1.iframe(url, width=550, height=512, scrolling=False)
-        
-            st.dataframe(df, hide_index=True, use_container_width=True, height=2000)
+            st.dataframe(df, hide_index=True, use_container_width=True)
 
         except Exception as e:
             st.error(f"Fout bij verwerken data: {e}")
 
 
-# st.subheader("Buienradar")
+        # st.subheader("Buienradar")
+        url = f"https://gadgets.buienradar.nl/gadget/zoommap/?lat={LAT}&lng={LON}&overname=2&zoom=8&naam={LOCATIE_NAAM}&size=3&voor=0"
+        st.components.v1.iframe(url, width=550, height=512, scrolling=False)
+
+
+# -------------------------------------------------------------------
+# -------------------------- REGISTER PAGE --------------------------
+# -------------------------------------------------------------------
+
+# -------------------------------------------------------------------
+# -------------------------- REGISTER PAGE (FIXED) ------------------
+# -------------------------------------------------------------------
+
+def page_register():
+    st.header("📲 Aanmelden voor Maatwerk Alert")
+    
+    st.markdown("Wil je ook een maatwerk alert op je telefoon ontvangen. Vul dan het onderstaand formulier in.")
+    
+    # Formulier met verplichte velden (gebruikt st.form_submit_button)
+    with st.form("register_form"):
+        st.subheader("Verplichte Gegevens")
+        
+        # 'required=True' verwijderd omdat dit argument niet wordt ondersteund.
+        name = st.text_input("Naam", help="Volledige naam")
+        ubn = st.text_input("UBN NUmmer", help="Uniek Bedrijfs Nummer (indien van toepassing)")
+        address = st.text_input("Adres", help="Straat en huisnummer")
+        city = st.text_input("Woonplaats", help="Plaatsnaam")
+        phone = st.text_input("Telefoonnummer", help="Voor Whatsapp-alerts")
+        birthdate = st.text_input("Geboortedatum", help="Voor leeftijdsgebonden advies (DD-MM-JJJJ)")
+        bankrekening = st.text_input("Bankrekening", help="Voor incasso (IBAN)")   
+        geslacht = st.selectbox("Geslacht", ["Man", "Vrouw"])
+        soortBoerderij = st.selectbox("Soort Boerderij", ["Melkveebedrijf", "Vleesveebedrijf", "Overig"])   
         
 
+        
+        submitted = st.form_submit_button("Schrijf mij in")
+
+        if submitted:
+            # 1. Validatiecheck toevoegen (simuleert 'required')
+            if not name or not address or not city or not phone:
+                st.error("Vul AUB alle verplichte velden in. Elk veld is nodig.")
+            else:
+                # 2. 'Dummy' actie na succesvolle validatie
+                st.success(f"Bedankt voor je inschrijving, {name}! Je ontvangt binnenkort een maatwerk alert.")
+                st.info("Let op: Dit formulier slaat momenteel geen gegevens op en verstuurt geen echte alerts.")
 
 # -------------------------------------------------------------------
 # -------------------------- ABOUT PAGE ------------------------------
@@ -208,5 +249,7 @@ def page_about():
 
 if st.session_state.page == "home":
     page_home()
+elif st.session_state.page == "register":
+    page_register()
 else:
     page_about()
