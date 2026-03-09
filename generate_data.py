@@ -4,7 +4,11 @@ import json
 import time
 
 # --- Configurations ---
-API_KEY = os.getenv("METEOSERVER_API_KEY", "8f58861a52")
+API_KEY = os.getenv("METEOSERVER_API_KEY")
+if not API_KEY:
+    print("Error: METEOSERVER_API_KEY environment variable not set.")
+    exit(1)
+
 OUTPUT_DIR = "docs/data"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
