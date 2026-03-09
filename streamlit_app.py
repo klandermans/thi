@@ -21,6 +21,8 @@ st.markdown(
 )
 
 
+import os
+
 # --- THI Calculation Functions ---
 def calculate_thi(temp, rh):
     """Bereken de Temperature Humidity Index (THI)."""
@@ -95,7 +97,7 @@ with st.sidebar:
 
 
 def page_home():
-    API_KEY = "8f58861a52"
+    API_KEY = os.getenv("METEOSERVER_API_KEY", "8f58861a52") # Fallback for local testing
     LAT = 53.2013
     LON = 5.7601
     LOCATIE_NAAM = "Leeuwarden"
