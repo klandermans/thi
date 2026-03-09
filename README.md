@@ -61,10 +61,36 @@ The system will be configured with the following validated logic:
     *   **Trigger:** 12-hour forecast.
     *   **Filter:** Ignore sensor data > 90 (contamination).
 
+## Static Site Hosting (GitHub Pages)
+
+The interactive dashboard is now available as a static site that can be hosted on GitHub Pages. It replaces the previous Streamlit application for better performance and easier hosting.
+
+### Features
+- **Auto-update**: Weather data is updated every 3 hours via GitHub Actions.
+- **Multiple Stations**: Users can select from various weather stations (defaulting to Leeuwarden).
+- **No Backend Required**: The site runs entirely in the browser using pre-generated JSON data.
+
+### Setup Instructions
+
+1.  **Configure GitHub Secrets**:
+    - Go to your repository **Settings** > **Secrets and variables** > **Actions**.
+    - Add a **New repository secret**.
+    - Name: `METEOSERVER_API_KEY`
+    - Value: Your Meteoserver API key (e.g., `8f58861a52`).
+
+2.  **Enable GitHub Pages**:
+    - Go to **Settings** > **Pages**.
+    - Under **Build and deployment**, set **Source** to "Deploy from a branch".
+    - Select your branch (usually `main`) and set the folder to `/docs`.
+    - Click **Save**.
+
+3.  **Automatic Updates**:
+    - The `.github/workflows/update_data.yml` action will run every 3 hours.
+    - You can also trigger it manually from the **Actions** tab by selecting "Update Weather Data" and clicking "Run workflow".
+
 ## Prerequisites
-* Python 3.9+
-* KNMI Data Platform Account
-* WhatsApp Provider (Twilio / Meta)
+* Python 3.9+ (for local data generation)
+* Meteoserver API Key
 
 ## Installation
 

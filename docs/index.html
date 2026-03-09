@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THI Heatstress App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.plot.ly/plotly-2.24.1.min.js"></script>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>☰ Menu</h2>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showPage('home')">Dashboard</a></li>
+                <li><a href="#" onclick="showPage('register')">Inschrijven</a></li>
+                <li><a href="#" onclick="showPage('about')">About</a></li>
+            </ul>
+        </nav>
+        <hr>
+        <div class="sidebar-search">
+            <label for="station-select">Kies een weerstation:</label>
+            <select id="station-select" onchange="loadStation(this.value)">
+                <!-- Wordt gevuld door JS -->
+            </select>
+        </div>
+    </div>
+
+    <main class="content">
+        <!-- HOME PAGE -->
+        <section id="page-home">
+            <h1 class="title"><span class="heat">HEAT</span> stress APP</h1>
+            
+            <div id="status-box" class="status-box">
+                Laden...
+            </div>
+
+            <div id="chart-container">
+                <div id="thi-chart"></div>
+            </div>
+
+            <div class="table-container">
+                <table id="forecast-table">
+                    <thead>
+                        <tr>
+                            <th>Tijd</th>
+                            <th>Temp (°C)</th>
+                            <th>RV (%)</th>
+                            <th>THI Buiten</th>
+                            <th>THI Binnen</th>
+                            <th>Advies</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Wordt gevuld door JS -->
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="buienradar">
+                <iframe id="buienradar-iframe" src="" width="100%" height="512" frameborder="0" scrolling="no"></iframe>
+            </div>
+        </section>
+
+        <!-- REGISTER PAGE -->
+        <section id="page-register" style="display: none;">
+            <h2>📲 Aanmelden voor Maatwerk Alert</h2>
+            <p>Wil je ook een maatwerk alert op je telefoon ontvangen. Vul dan het onderstaand formulier in.</p>
+            <form class="st-form" onsubmit="handleRegister(event)">
+                <h3>Verplichte Gegevens</h3>
+                <div class="form-group">
+                    <label>Naam</label>
+                    <input type="text" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label>UBN Nummer</label>
+                    <input type="text" name="ubn">
+                </div>
+                <div class="form-group">
+                    <label>Adres</label>
+                    <input type="text" name="address" required>
+                </div>
+                <div class="form-group">
+                    <label>Woonplaats</label>
+                    <input type="text" name="city" required>
+                </div>
+                <div class="form-group">
+                    <label>Telefoonnummer</label>
+                    <input type="text" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label>Geboortedatum</label>
+                    <input type="text" name="birthdate">
+                </div>
+                <div class="form-group">
+                    <label>Bankrekening (IBAN)</label>
+                    <input type="text" name="bank">
+                </div>
+                <div class="form-group">
+                    <label>Geslacht</label>
+                    <select name="gender">
+                        <option>Man</option>
+                        <option>Vrouw</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Soort Boerderij</label>
+                    <select name="type">
+                        <option>Melkveebedrijf</option>
+                        <option>Vleesveebedrijf</option>
+                        <option>Overig</option>
+                    </select>
+                </div>
+                <button type="submit" class="st-button">Schrijf mij in</button>
+            </form>
+            <div id="register-msg"></div>
+        </section>
+
+        <!-- ABOUT PAGE -->
+        <section id="page-about" style="display: none;">
+            <h2>🐄 Heatstress App 🛠️</h2>
+            <div class="about-content">
+                <img src="images/cowboy.png" alt="The Dairy Campus Cowboys" class="about-img">
+                <p>The Dairy <b style="color:red">Heat</b>stress App was forged in the digital frontier by the Dairy Campus Cowboys.</p>
+                <p>⭐ Anna, our shining star, tolerated zero 'fluff' on the Frontier.</p>
+                <p>🤠 Paul, the old sherrif supplied the vital and safe context.</p> 
+                <p>💻 Bert, responsible for disrupting hacks, beers & bytes</p>
+                <p>The Dairy Campus Cowboys engineered this application to deliver heat stress insights, without the fluff.</P>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p id="last-updated">Laatst bijgewerkt: ...</p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
