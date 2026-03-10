@@ -2,10 +2,10 @@
     "station": "Hoogeveen",
     "lat": 52.75,
     "lon": 6.52,
-    "updated_at": "2026-03-10 03:01:12",
+    "updated_at": "2026-03-10 04:37:01",
     "forecast": [
         {
-            "Tijd": "10-03-2026 05:00",
+            "Tijd": "10-03-2026 06:00",
             "Temp_Out": 4.0,
             "RH": 98.0,
             "THI_Out": 39.4,
@@ -13,19 +13,11 @@
             "Advies": "Geen alert"
         },
         {
-            "Tijd": "10-03-2026 06:00",
-            "Temp_Out": 5.0,
-            "RH": 98.0,
-            "THI_Out": 41.2,
-            "THI_In": 49.5,
-            "Advies": "Geen alert"
-        },
-        {
             "Tijd": "10-03-2026 07:00",
-            "Temp_Out": 6.0,
+            "Temp_Out": 5.0,
             "RH": 97.0,
-            "THI_Out": 43.1,
-            "THI_In": 50.9,
+            "THI_Out": 41.3,
+            "THI_In": 49.5,
             "Advies": "Geen alert"
         },
         {
