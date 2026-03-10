@@ -2,28 +2,20 @@
     "station": "Groningen (Eelde)",
     "lat": 53.13,
     "lon": 6.58,
-    "updated_at": "2026-03-10 10:17:42",
+    "updated_at": "2026-03-10 11:15:25",
     "forecast": [
-        {
-            "Tijd": "10-03-2026 12:00",
-            "Temp_Out": 12.0,
-            "RH": 82.0,
-            "THI_Out": 54.0,
-            "THI_In": 59.4,
-            "Advies": "Geen alert"
-        },
         {
             "Tijd": "10-03-2026 13:00",
             "Temp_Out": 12.0,
-            "RH": 86.0,
-            "THI_Out": 53.9,
+            "RH": 85.0,
+            "THI_Out": 54.0,
             "THI_In": 59.4,
             "Advies": "Geen alert"
         },
         {
             "Tijd": "10-03-2026 14:00",
             "Temp_Out": 12.0,
-            "RH": 89.0,
+            "RH": 88.0,
             "THI_Out": 53.9,
             "THI_In": 59.5,
             "Advies": "Geen alert"
@@ -31,7 +23,7 @@
         {
             "Tijd": "10-03-2026 15:00",
             "Temp_Out": 11.0,
-            "RH": 92.0,
+            "RH": 91.0,
             "THI_Out": 52.1,
             "THI_In": 58.1,
             "Advies": "Geen alert"
@@ -39,16 +31,16 @@
         {
             "Tijd": "10-03-2026 16:00",
             "Temp_Out": 10.0,
-            "RH": 95.0,
-            "THI_Out": 50.2,
+            "RH": 94.0,
+            "THI_Out": 50.3,
             "THI_In": 56.7,
             "Advies": "Geen alert"
         },
         {
             "Tijd": "10-03-2026 17:00",
             "Temp_Out": 10.0,
-            "RH": 97.0,
-            "THI_Out": 50.1,
+            "RH": 96.0,
+            "THI_Out": 50.2,
             "THI_In": 56.7,
             "Advies": "Geen alert"
         },
