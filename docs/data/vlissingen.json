@@ -2,20 +2,12 @@
     "station": "Vlissingen",
     "lat": 51.45,
     "lon": 3.6,
-    "updated_at": "2026-03-10 19:19:34",
+    "updated_at": "2026-03-10 20:11:42",
     "forecast": [
-        {
-            "Tijd": "10-03-2026 21:00",
-            "Temp_Out": 9.0,
-            "RH": 94.0,
-            "THI_Out": 48.5,
-            "THI_In": 55.3,
-            "Advies": "Geen alert"
-        },
         {
             "Tijd": "10-03-2026 22:00",
             "Temp_Out": 9.0,
-            "RH": 93.0,
+            "RH": 92.0,
             "THI_Out": 48.6,
             "THI_In": 55.3,
             "Advies": "Geen alert"
@@ -23,15 +15,15 @@
         {
             "Tijd": "10-03-2026 23:00",
             "Temp_Out": 9.0,
-            "RH": 94.0,
-            "THI_Out": 48.5,
+            "RH": 93.0,
+            "THI_Out": 48.6,
             "THI_In": 55.3,
             "Advies": "Geen alert"
         },
         {
             "Tijd": "11-03-2026 00:00",
             "Temp_Out": 9.0,
-            "RH": 95.0,
+            "RH": 94.0,
             "THI_Out": 48.5,
             "THI_In": 55.3,
             "Advies": "Geen alert"
@@ -39,7 +31,7 @@
         {
             "Tijd": "11-03-2026 01:00",
             "Temp_Out": 9.0,
-            "RH": 95.0,
+            "RH": 94.0,
             "THI_Out": 48.5,
             "THI_In": 55.3,
             "Advies": "Geen alert"
@@ -47,24 +39,24 @@
         {
             "Tijd": "11-03-2026 02:00",
             "Temp_Out": 9.0,
-            "RH": 94.0,
-            "THI_Out": 48.5,
+            "RH": 93.0,
+            "THI_Out": 48.6,
             "THI_In": 55.3,
             "Advies": "Geen alert"
         },
         {
             "Tijd": "11-03-2026 03:00",
             "Temp_Out": 9.0,
-            "RH": 94.0,
-            "THI_Out": 48.5,
+            "RH": 93.0,
+            "THI_Out": 48.6,
             "THI_In": 55.3,
             "Advies": "Geen alert"
         },
         {
             "Tijd": "11-03-2026 04:00",
             "Temp_Out": 9.0,
-            "RH": 94.0,
-            "THI_Out": 48.5,
+            "RH": 93.0,
+            "THI_Out": 48.6,
             "THI_In": 55.3,
             "Advies": "Geen alert"
         },
