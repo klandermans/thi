@@ -2,36 +2,28 @@
     "station": "Eindhoven",
     "lat": 51.45,
     "lon": 5.37,
-    "updated_at": "2026-03-10 05:24:48",
+    "updated_at": "2026-03-10 06:20:26",
     "forecast": [
-        {
-            "Tijd": "10-03-2026 07:00",
-            "Temp_Out": 8.0,
-            "RH": 91.0,
-            "THI_Out": 47.0,
-            "THI_In": 54.0,
-            "Advies": "Geen alert"
-        },
         {
             "Tijd": "10-03-2026 08:00",
             "Temp_Out": 9.0,
-            "RH": 91.0,
+            "RH": 90.0,
             "THI_Out": 48.7,
-            "THI_In": 55.3,
+            "THI_In": 55.4,
             "Advies": "Geen alert"
         },
         {
             "Tijd": "10-03-2026 09:00",
             "Temp_Out": 10.0,
-            "RH": 90.0,
-            "THI_Out": 50.4,
+            "RH": 89.0,
+            "THI_Out": 50.5,
             "THI_In": 56.7,
             "Advies": "Geen alert"
         },
         {
             "Tijd": "10-03-2026 10:00",
             "Temp_Out": 11.0,
-            "RH": 91.0,
+            "RH": 90.0,
             "THI_Out": 52.1,
             "THI_In": 58.1,
             "Advies": "Geen alert"
@@ -39,7 +31,7 @@
         {
             "Tijd": "10-03-2026 11:00",
             "Temp_Out": 11.0,
-            "RH": 92.0,
+            "RH": 91.0,
             "THI_Out": 52.1,
             "THI_In": 58.1,
             "Advies": "Geen alert"
@@ -47,23 +39,23 @@
         {
             "Tijd": "10-03-2026 12:00",
             "Temp_Out": 11.0,
-            "RH": 93.0,
-            "THI_Out": 52.0,
+            "RH": 92.0,
+            "THI_Out": 52.1,
             "THI_In": 58.1,
             "Advies": "Geen alert"
         },
         {
             "Tijd": "10-03-2026 13:00",
             "Temp_Out": 10.0,
-            "RH": 93.0,
-            "THI_Out": 50.3,
+            "RH": 92.0,
+            "THI_Out": 50.4,
             "THI_In": 56.7,
             "Advies": "Geen alert"
         },
         {
             "Tijd": "10-03-2026 14:00",
             "Temp_Out": 10.0,
-            "RH": 92.0,
+            "RH": 91.0,
             "THI_Out": 50.4,
             "THI_In": 56.7,
             "Advies": "Geen alert"
