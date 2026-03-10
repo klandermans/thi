@@ -2,78 +2,70 @@
     "station": "Lelystad",
     "lat": 52.45,
     "lon": 5.52,
-    "updated_at": "2026-03-10 08:15:40",
+    "updated_at": "2026-03-10 09:19:12",
     "forecast": [
         {
-            "Tijd": "10-03-2026 10:00",
-            "Temp_Out": 9.0,
-            "RH": 93.0,
-            "THI_Out": 48.6,
-            "THI_In": 55.3,
-            "Advies": "Geen alert"
-        },
-        {
             "Tijd": "10-03-2026 11:00",
-            "Temp_Out": 9.0,
-            "RH": 96.0,
-            "THI_Out": 48.4,
-            "THI_In": 55.3,
+            "Temp_Out": 10.0,
+            "RH": 92.0,
+            "THI_Out": 50.4,
+            "THI_In": 56.7,
             "Advies": "Geen alert"
         },
         {
             "Tijd": "10-03-2026 12:00",
-            "Temp_Out": 9.0,
-            "RH": 97.0,
-            "THI_Out": 48.4,
-            "THI_In": 55.2,
+            "Temp_Out": 10.0,
+            "RH": 95.0,
+            "THI_Out": 50.2,
+            "THI_In": 56.7,
             "Advies": "Geen alert"
         },
         {
             "Tijd": "10-03-2026 13:00",
-            "Temp_Out": 9.0,
-            "RH": 98.0,
-            "THI_Out": 48.3,
-            "THI_In": 55.2,
+            "Temp_Out": 10.0,
+            "RH": 97.0,
+            "THI_Out": 50.1,
+            "THI_In": 56.7,
             "Advies": "Geen alert"
         },
         {
             "Tijd": "10-03-2026 14:00",
-            "Temp_Out": 9.0,
+            "Temp_Out": 10.0,
             "RH": 98.0,
-            "THI_Out": 48.3,
-            "THI_In": 55.2,
+            "THI_Out": 50.1,
+            "THI_In": 56.7,
             "Advies": "Geen alert"
         },
         {
             "Tijd": "10-03-2026 15:00",
-            "Temp_Out": 9.0,
+            "Temp_Out": 10.0,
             "RH": 98.0,
-            "THI_Out": 48.3,
-            "THI_In": 55.2,
+            "THI_Out": 50.1,
+            "THI_In": 56.7,
             "Advies": "Geen alert"
         },
         {
             "Tijd": "10-03-2026 16:00",
-            "Temp_Out": 9.0,
+            "Temp_Out": 10.0,
             "RH": 98.0,
-            "THI_Out": 48.3,
-            "THI_In": 55.2,
+            "THI_Out": 50.1,
+            "THI_In": 56.7,
             "Advies": "Geen alert"
         },
         {
             "Tijd": "10-03-2026 17:00",
-            "Temp_Out": 9.0,
+            "Temp_Out": 10.0,
             "RH": 97.0,
-            "THI_Out": 48.4,
-            "THI_In": 55.2,
+            "THI_Out": 50.1,
+            "THI_In": 56.7,
             "Advies": "Geen alert"
         },
         {
             "Tijd": "10-03-2026 18:00",
-            "Temp_Out": 9.0,
+            "Temp_Out": 10.0,
             "RH": 97.0,
-            "THI_Out": 48.4,
-            "THI_In": 55.2,
+            "THI_Out": 50.1,
+            "THI_In": 56.7,
             "Advies": "Geen alert"
         },
         {

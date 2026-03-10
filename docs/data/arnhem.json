@@ -2,42 +2,42 @@
     "station": "Arnhem",
     "lat": 51.98,
     "lon": 5.91,
-    "updated_at": "2026-03-10 08:15:42",
+    "updated_at": "2026-03-10 09:19:14",
     "forecast": [
         {
-            "Tijd": "10-03-2026 10:00",
-            "Temp_Out": 11.0,
-            "RH": 85.0,
-            "THI_Out": 52.3,
-            "THI_In": 58.1,
-            "Advies": "Geen alert"
-        },
-        {
             "Tijd": "10-03-2026 11:00",
-            "Temp_Out": 12.0,
-            "RH": 82.0,
-            "THI_Out": 54.0,
-            "THI_In": 59.4,
+            "Temp_Out": 13.0,
+            "RH": 79.0,
+            "THI_Out": 55.7,
+            "THI_In": 60.7,
             "Advies": "Geen alert"
         },
         {
             "Tijd": "10-03-2026 12:00",
-            "Temp_Out": 12.0,
-            "RH": 83.0,
-            "THI_Out": 54.0,
-            "THI_In": 59.4,
+            "Temp_Out": 13.0,
+            "RH": 82.0,
+            "THI_Out": 55.7,
+            "THI_In": 60.7,
             "Advies": "Geen alert"
         },
         {
             "Tijd": "10-03-2026 13:00",
-            "Temp_Out": 12.0,
-            "RH": 87.0,
-            "THI_Out": 53.9,
-            "THI_In": 59.5,
+            "Temp_Out": 13.0,
+            "RH": 86.0,
+            "THI_Out": 55.6,
+            "THI_In": 60.8,
             "Advies": "Geen alert"
         },
         {
             "Tijd": "10-03-2026 14:00",
+            "Temp_Out": 12.0,
+            "RH": 90.0,
+            "THI_Out": 53.8,
+            "THI_In": 59.5,
+            "Advies": "Geen alert"
+        },
+        {
+            "Tijd": "10-03-2026 15:00",
             "Temp_Out": 11.0,
             "RH": 91.0,
             "THI_Out": 52.1,
@@ -45,17 +45,9 @@
             "Advies": "Geen alert"
         },
         {
-            "Tijd": "10-03-2026 15:00",
-            "Temp_Out": 11.0,
-            "RH": 92.0,
-            "THI_Out": 52.1,
-            "THI_In": 58.1,
-            "Advies": "Geen alert"
-        },
-        {
             "Tijd": "10-03-2026 16:00",
             "Temp_Out": 11.0,
-            "RH": 92.0,
+            "RH": 91.0,
             "THI_Out": 52.1,
             "THI_In": 58.1,
             "Advies": "Geen alert"
