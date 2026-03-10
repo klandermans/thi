@@ -2,62 +2,54 @@
     "station": "Arnhem",
     "lat": 51.98,
     "lon": 5.91,
-    "updated_at": "2026-03-10 22:09:17",
+    "updated_at": "2026-03-10 23:09:54",
     "forecast": [
         {
-            "Tijd": "11-03-2026 00:00",
-            "Temp_Out": 10.0,
-            "RH": 90.0,
-            "THI_Out": 50.4,
-            "THI_In": 56.7,
-            "Advies": "Geen alert"
-        },
-        {
             "Tijd": "11-03-2026 01:00",
-            "Temp_Out": 10.0,
+            "Temp_Out": 9.0,
             "RH": 92.0,
-            "THI_Out": 50.4,
-            "THI_In": 56.7,
+            "THI_Out": 48.6,
+            "THI_In": 55.3,
             "Advies": "Geen alert"
         },
         {
             "Tijd": "11-03-2026 02:00",
-            "Temp_Out": 10.0,
+            "Temp_Out": 9.0,
             "RH": 93.0,
-            "THI_Out": 50.3,
-            "THI_In": 56.7,
+            "THI_Out": 48.6,
+            "THI_In": 55.3,
             "Advies": "Geen alert"
         },
         {
             "Tijd": "11-03-2026 03:00",
-            "Temp_Out": 10.0,
+            "Temp_Out": 9.0,
             "RH": 94.0,
-            "THI_Out": 50.3,
-            "THI_In": 56.7,
+            "THI_Out": 48.5,
+            "THI_In": 55.3,
             "Advies": "Geen alert"
         },
         {
             "Tijd": "11-03-2026 04:00",
-            "Temp_Out": 10.0,
+            "Temp_Out": 9.0,
             "RH": 93.0,
-            "THI_Out": 50.3,
-            "THI_In": 56.7,
+            "THI_Out": 48.6,
+            "THI_In": 55.3,
             "Advies": "Geen alert"
         },
         {
             "Tijd": "11-03-2026 05:00",
-            "Temp_Out": 10.0,
+            "Temp_Out": 9.0,
             "RH": 92.0,
-            "THI_Out": 50.4,
-            "THI_In": 56.7,
+            "THI_Out": 48.6,
+            "THI_In": 55.3,
             "Advies": "Geen alert"
         },
         {
             "Tijd": "11-03-2026 06:00",
-            "Temp_Out": 10.0,
+            "Temp_Out": 9.0,
             "RH": 93.0,
-            "THI_Out": 50.3,
-            "THI_In": 56.7,
+            "THI_Out": 48.6,
+            "THI_In": 55.3,
             "Advies": "Geen alert"
         },
         {

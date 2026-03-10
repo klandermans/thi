@@ -44,16 +44,8 @@
         "file": "lelystad.json"
     },
     {
-        "name": "Hoogeveen",
-        "file": "hoogeveen.json"
-    },
-    {
         "name": "Alkmaar",
         "file": "alkmaar.json"
-    },
-    {
-        "name": "Zwolle",
-        "file": "zwolle.json"
     },
     {
         "name": "Arnhem",
