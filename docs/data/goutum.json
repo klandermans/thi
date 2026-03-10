@@ -2,16 +2,8 @@
     "station": "Goutum",
     "lat": 53.18,
     "lon": 5.8,
-    "updated_at": "2026-03-10 14:21:26",
+    "updated_at": "2026-03-10 15:23:43",
     "forecast": [
-        {
-            "Tijd": "10-03-2026 16:00",
-            "Temp_Out": 9.0,
-            "RH": 97.0,
-            "THI_Out": 48.4,
-            "THI_In": 55.2,
-            "Advies": "Geen alert"
-        },
         {
             "Tijd": "10-03-2026 17:00",
             "Temp_Out": 9.0,
