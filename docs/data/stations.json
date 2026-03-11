@@ -2,25 +2,5 @@
     {
         "name": "Leeuwarden",
         "file": "leeuwarden.json"
-    },
-    {
-        "name": "Goutum",
-        "file": "goutum.json"
-    },
-    {
-        "name": "De Bilt",
-        "file": "de_bilt.json"
-    },
-    {
-        "name": "Maastricht",
-        "file": "maastricht.json"
-    },
-    {
-        "name": "Den Helder",
-        "file": "den_helder.json"
-    },
-    {
-        "name": "Eindhoven",
-        "file": "eindhoven.json"
     }
 ]
