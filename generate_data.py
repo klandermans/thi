@@ -1,7 +1,8 @@
 import requests
 import os
 import json
-import time
+from datetime import datetime
+from zoneinfo import ZoneInfo
 
 # --- Configurations ---
 API_KEY = os.getenv("METEOSERVER_API_KEY")
@@ -41,29 +42,30 @@ def get_thi_alert(thi):
 
 def fetch_and_process(name, lat, lon):
     print(f"Fetching data for {name}...")
-    api_url = f"https://data.meteoserver.nl/api/uurverwachting.php?lat={lat}&long={lon}&key={API_KEY}"
-    
+    api_url = f"https://data.meteoserver.nl/api/uurverwachting.php?locatie={name}&key={API_KEY}"
+
     try:
         r = requests.get(api_url)
+
         if r.status_code != 200:
             print(f"Error {r.status_code} for {name}: {r.text}")
             return None
-        
+
         data = r.json().get("data")
         if not data:
             print(f"No data returned for {name}")
             return None
-        
+
         forecast_list = []
         for forecast in data:
             temp_out = float(forecast["temp"])
             rh = float(forecast["rv"])
             # Vereenvoudigde berekening voor binnentemperatuur
             temp_in = 0.81 * temp_out + 5.60
-            
+
             thi_out = calculate_thi(temp_out, rh)
             thi_in = calculate_thi(temp_in, rh)
-            
+
             forecast_list.append({
                 "Tijd": forecast["tijd_nl"],
                 "Temp_Out": temp_out,
@@ -72,22 +74,22 @@ def fetch_and_process(name, lat, lon):
                 "THI_In": round(thi_in, 1),
                 "Advies": get_thi_alert(thi_in)
             })
-            
+
         result = {
             "station": name,
             "lat": lat,
             "lon": lon,
-            "updated_at": time.strftime("%Y-%m-%d %H:%M:%S"),
+            "updated_at": datetime.now(ZoneInfo("Europe/Amsterdam")).strftime("%Y-%m-%d %H:%M:%S"),
             "forecast": forecast_list
         }
-        
+
         # Save to file
         filename = name.lower().replace(" ", "_").replace("(", "").replace(")", "") + ".json"
         with open(os.path.join(OUTPUT_DIR, filename), "w") as f:
             json.dump(result, f, indent=4)
-            
+
         return result
-        
+
     except Exception as e:
         print(f"Exception processing {name}: {e}")
         return None
@@ -99,9 +101,9 @@ if __name__ == "__main__":
         res = fetch_and_process(name, coords["lat"], coords["lon"])
         if res:
             results.append({"name": name, "file": name.lower().replace(" ", "_").replace("(", "").replace(")", "") + ".json"})
-            
+
     # Save a manifest of all available stations
     with open(os.path.join(OUTPUT_DIR, "stations.json"), "w") as f:
         json.dump(results, f, indent=4)
-        
+
     print("Data update complete.")
