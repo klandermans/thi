@@ -4,8 +4,16 @@
         "file": "leeuwarden.json"
     },
     {
+        "name": "De Bilt",
+        "file": "de_bilt.json"
+    },
+    {
         "name": "Maastricht",
         "file": "maastricht.json"
+    },
+    {
+        "name": "Rotterdam",
+        "file": "rotterdam.json"
     },
     {
         "name": "Den Helder",
@@ -16,8 +24,8 @@
         "file": "eindhoven.json"
     },
     {
-        "name": "Hoogeveen",
-        "file": "hoogeveen.json"
+        "name": "Alkmaar",
+        "file": "alkmaar.json"
     },
     {
         "name": "Arnhem",
