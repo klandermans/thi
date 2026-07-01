@@ -1,5 +1,13 @@
 [
     {
+        "name": "Goutum",
+        "file": "goutum.json"
+    },
+    {
+        "name": "De Bilt",
+        "file": "de_bilt.json"
+    },
+    {
         "name": "Eindhoven",
         "file": "eindhoven.json"
     },
@@ -14,9 +22,5 @@
     {
         "name": "Zwolle",
         "file": "zwolle.json"
-    },
-    {
-        "name": "Arnhem",
-        "file": "arnhem.json"
     }
 ]
