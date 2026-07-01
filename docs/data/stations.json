@@ -1,15 +1,11 @@
 [
     {
-        "name": "Leeuwarden",
-        "file": "leeuwarden.json"
+        "name": "De Bilt",
+        "file": "de_bilt.json"
     },
     {
-        "name": "Rotterdam",
-        "file": "rotterdam.json"
-    },
-    {
-        "name": "Den Helder",
-        "file": "den_helder.json"
+        "name": "Vlissingen",
+        "file": "vlissingen.json"
     },
     {
         "name": "Eindhoven",
@@ -18,5 +14,9 @@
     {
         "name": "Lelystad",
         "file": "lelystad.json"
+    },
+    {
+        "name": "Zwolle",
+        "file": "zwolle.json"
     }
 ]
