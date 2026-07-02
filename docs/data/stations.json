@@ -1,7 +1,15 @@
 [
     {
-        "name": "Rotterdam",
-        "file": "rotterdam.json"
+        "name": "Goutum",
+        "file": "goutum.json"
+    },
+    {
+        "name": "Maastricht",
+        "file": "maastricht.json"
+    },
+    {
+        "name": "Vlissingen",
+        "file": "vlissingen.json"
     },
     {
         "name": "Eindhoven",
@@ -14,10 +22,6 @@
     {
         "name": "Hoogeveen",
         "file": "hoogeveen.json"
-    },
-    {
-        "name": "Alkmaar",
-        "file": "alkmaar.json"
     },
     {
         "name": "Zwolle",
