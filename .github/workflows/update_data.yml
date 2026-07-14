@@ -40,6 +40,15 @@ jobs:
           METEOSERVER_API_KEY: ${{ secrets.METEOSERVER_API_KEY }}
         run: python generate_data.py
 
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add docs/data/*.json
+          git diff --quiet && git diff --staged --quiet || git commit -m "Update weather data [skip ci]"
+          git push
+
+
       - name: Send THI notifications
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
@@ -49,10 +58,4 @@ jobs:
           VAPID_SUBJECT: mailto:demo@example.com
         run: python send_notification.py
 
-      - name: Commit and push changes
-        run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git add docs/data/*.json
-          git diff --quiet && git diff --staged --quiet || git commit -m "Update weather data [skip ci]"
-          git push
+
