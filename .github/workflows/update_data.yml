@@ -2,7 +2,7 @@ name: Update Weather Data
 
 on:
   schedule:
-    - cron: '41 6,9,12 * * *' # Every hour
+    - cron: '41 6,9,12 * * *' # Run at specific hours
   workflow_dispatch: # Manual trigger
   push:
     branches:
@@ -17,14 +17,16 @@ jobs:
       contents: write
     
     steps:
+      # Updated to v5 to resolve Node.js 20 deprecation
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
+      # Updated to v6 to resolve Node.js 20 deprecation
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.13'
-          cache: 'pip' # caching pip dependencies
+          cache: 'pip' # Cache pip dependencies
 
       - name: Install dependencies
         run: |
@@ -32,7 +34,7 @@ jobs:
           pip install -r requirements.txt
           pip install supabase pywebpush
 
-      # Note: generate_data.py only needs 'requests' which is in requirements.txt
+      # Run data generation script; requires 'requests' (in requirements.txt)
       - name: Run data generation script
         env:
           METEOSERVER_API_KEY: ${{ secrets.METEOSERVER_API_KEY }}
