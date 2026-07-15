@@ -2,18 +2,34 @@
     "station": "Leeuwarden",
     "lat": 53.22,
     "lon": 5.75,
-    "updated_at": "2026-07-15 10:58:55",
+    "updated_at": "2026-07-15 11:05:53",
     "forecast": [
         {
-            "Tijd": "15-07-2026 11:00",
+            "Tijd": "15-07-2026 12:00",
             "Temp_Out": 27.0,
-            "RH": 45.0,
-            "THI_Out": 73.7,
-            "THI_In": 74.3,
+            "RH": 43.0,
+            "THI_Out": 73.4,
+            "THI_In": 74.0,
             "Advies": "Alert"
         },
         {
-            "Tijd": "15-07-2026 12:00",
+            "Tijd": "15-07-2026 13:00",
+            "Temp_Out": 28.0,
+            "RH": 37.0,
+            "THI_Out": 73.8,
+            "THI_In": 74.2,
+            "Advies": "Alert"
+        },
+        {
+            "Tijd": "15-07-2026 14:00",
+            "Temp_Out": 28.0,
+            "RH": 36.0,
+            "THI_Out": 73.7,
+            "THI_In": 74.0,
+            "Advies": "Alert"
+        },
+        {
+            "Tijd": "15-07-2026 15:00",
             "Temp_Out": 28.0,
             "RH": 38.0,
             "THI_Out": 74.0,
@@ -21,43 +37,19 @@
             "Advies": "Alert"
         },
         {
-            "Tijd": "15-07-2026 13:00",
-            "Temp_Out": 29.0,
-            "RH": 34.0,
-            "THI_Out": 74.6,
-            "THI_In": 74.7,
-            "Advies": "Alert"
-        },
-        {
-            "Tijd": "15-07-2026 14:00",
-            "Temp_Out": 28.0,
-            "RH": 35.0,
-            "THI_Out": 73.6,
-            "THI_In": 73.9,
-            "Advies": "Alert"
-        },
-        {
-            "Tijd": "15-07-2026 15:00",
-            "Temp_Out": 28.0,
-            "RH": 37.0,
-            "THI_Out": 73.8,
-            "THI_In": 74.2,
-            "Advies": "Alert"
-        },
-        {
             "Tijd": "15-07-2026 16:00",
             "Temp_Out": 28.0,
-            "RH": 37.0,
-            "THI_Out": 73.8,
-            "THI_In": 74.2,
+            "RH": 38.0,
+            "THI_Out": 74.0,
+            "THI_In": 74.3,
             "Advies": "Alert"
         },
         {
             "Tijd": "15-07-2026 17:00",
             "Temp_Out": 28.0,
-            "RH": 35.0,
-            "THI_Out": 73.6,
-            "THI_In": 73.9,
+            "RH": 36.0,
+            "THI_Out": 73.7,
+            "THI_In": 74.0,
             "Advies": "Alert"
         },
         {
