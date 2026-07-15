@@ -1,5 +1,6 @@
 import requests
 import os
+import sys
 import json
 from datetime import datetime
 from zoneinfo import ZoneInfo
@@ -51,7 +52,12 @@ def fetch_and_process(name, lat, lon):
             print(f"Error {r.status_code} for {name}: {r.text}")
             return None
 
-        data = r.json().get("data")
+        response_json = r.json()
+        if "api_key_invalid" in response_json:
+            print(f"Error: Meteoserver API key is invalid: {response_json['api_key_invalid']}")
+            sys.exit(1)
+
+        data = response_json.get("data")
         if not data:
             print(f"No data returned for {name}")
             return None
@@ -101,6 +107,12 @@ if __name__ == "__main__":
         res = fetch_and_process(name, coords["lat"], coords["lon"])
         if res:
             results.append({"name": name, "file": name.lower().replace(" ", "_").replace("(", "").replace(")", "") + ".json"})
+
+    # If we got absolutely zero results, something is fundamentally wrong (network down, API key expired, etc.)
+    # We should not overwrite the stations.json with [] and exit successfully.
+    if not results:
+        print("Error: Failed to fetch data for all stations. Aborting update.")
+        sys.exit(1)
 
     # Save a manifest of all available stations
     with open(os.path.join(OUTPUT_DIR, "stations.json"), "w") as f:
