@@ -3,6 +3,31 @@
 ## Overview
 This system monitors predicted stable conditions based on KNMI weather forecasts. It sends a WhatsApp alert to the farmer when the calculated Temperature Humidity Index (THI) exceeds a critical threshold.
 
+
+### Automated Workflow & GitHub Actions:
+*   Describes that the system runs fully automatically via .github/workflows/update_data.yml.
+*   Explains that an automatic weather forecast update is generated every morning (and at set times throughout the day).
+*   Mentions that the calculation, data update on GitHub Pages, and WebPush notifications take place within a single automated workflow.
+
+### Location Coverage & More Weather Stations:
+
+*   Current status: Currently, the data generation and notification service are running specifically for Leeuwarden.
+*   Future vision: Once the testing and rollout phase is completed, more weather stations (such as De Bilt, Groningen, Maastricht, etc.) will be added.
+*   Environment and configuration updates:
+*   The secrets/environment variables in the README have been updated (such as METEOSERVER_API_KEY, SUPABASE_URL, SUPABASE_KEY, and VAPID_* keys).
+
+### generate_data.py:
+
+*   Retrieves the current hourly forecast via the Meteoserver API (for Leeuwarden, among others).
+*   Calculates the expected indoor temperature and the calculated THI values.
+*   Generates JSON data files in docs/data/ for the GitHub Pages web interface.
+*   Is executed automatically every 3 hours via GitHub Actions.
+
+### send_notification.py:
+
+• Analyzes the generated weather forecast for heat stress periods (THI ≥ 72).
+
+
 ## Logic & Model
 1.  **Data Ingestion**: Fetch weather forecast (Temperature & Humidity) from **KNMI API**.
 2.  **Indoor Prediction**: Predict indoor temperature ($T_{in}$) based on outdoor forecast ($T_{out}$) using the model (derived from "Hendrik Jan" analysis):
@@ -91,38 +116,3 @@ The interactive dashboard is now available as a static site that can be hosted o
 ## Prerequisites
 * Python 3.9+ (for local data generation)
 * Meteoserver API Key
-
-## Installation
-
-1. Clone repository
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-````
-
-## Configuration (`.env`)
-
-```ini
-# KNMI Source
-KNMI_API_KEY=your_key
-STATION_ID=260
-
-# Indoor Prediction Model (Linear Regression)
-MODEL_SLOPE=0.81
-MODEL_INTERCEPT=5.60
-
-# Limits
-THI_THRESHOLD=72
-
-# Notification
-WHATSAPP_PROVIDER_TOKEN=your_token
-PHONE_NUMBER=+31612345678
-```
-
-## Usage
-
-```bash
-python src/main.py
-```
-
-```
