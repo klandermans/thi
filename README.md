@@ -1,5 +1,9 @@
 # THI Forecast & Alert System
 
+--------------------------------------------------------
+Live version: https://klandermans.github.io/thi/
+--------------------------------------------------------
+
 ## Overview
 This system monitors predicted stable conditions based on KNMI weather forecasts. It sends a WhatsApp alert to the farmer when the calculated Temperature Humidity Index (THI) exceeds a critical threshold.
 
