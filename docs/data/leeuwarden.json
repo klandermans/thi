@@ -2,62 +2,38 @@
     "station": "Leeuwarden",
     "lat": 53.22,
     "lon": 5.75,
-    "updated_at": "2026-08-11 09:50:10",
+    "updated_at": "2026-08-11 12:28:45",
     "forecast": [
         {
-            "Tijd": "11-08-2026 10:00",
-            "Temp_Out": 23.0,
-            "RH": 54.0,
-            "THI_Out": 69.4,
-            "THI_In": 71.1,
-            "Advies": "Geen alert"
-        },
-        {
-            "Tijd": "11-08-2026 11:00",
-            "Temp_Out": 21.0,
-            "RH": 52.0,
-            "THI_Out": 66.6,
-            "THI_In": 68.8,
-            "Advies": "Geen alert"
-        },
-        {
-            "Tijd": "11-08-2026 12:00",
-            "Temp_Out": 21.0,
-            "RH": 48.0,
-            "THI_Out": 66.4,
-            "THI_In": 68.4,
-            "Advies": "Geen alert"
-        },
-        {
             "Tijd": "11-08-2026 13:00",
-            "Temp_Out": 21.0,
-            "RH": 45.0,
-            "THI_Out": 66.2,
-            "THI_In": 68.2,
+            "Temp_Out": 24.0,
+            "RH": 49.0,
+            "THI_Out": 70.3,
+            "THI_In": 71.6,
             "Advies": "Geen alert"
         },
         {
             "Tijd": "11-08-2026 14:00",
-            "Temp_Out": 21.0,
-            "RH": 44.0,
-            "THI_Out": 66.1,
-            "THI_In": 68.1,
+            "Temp_Out": 23.0,
+            "RH": 46.0,
+            "THI_Out": 68.8,
+            "THI_In": 70.3,
             "Advies": "Geen alert"
         },
         {
             "Tijd": "11-08-2026 15:00",
-            "Temp_Out": 21.0,
-            "RH": 43.0,
-            "THI_Out": 66.0,
-            "THI_In": 68.0,
+            "Temp_Out": 22.0,
+            "RH": 44.0,
+            "THI_Out": 67.3,
+            "THI_In": 69.1,
             "Advies": "Geen alert"
         },
         {
             "Tijd": "11-08-2026 16:00",
-            "Temp_Out": 21.0,
+            "Temp_Out": 22.0,
             "RH": 43.0,
-            "THI_Out": 66.0,
-            "THI_In": 68.0,
+            "THI_Out": 67.3,
+            "THI_In": 69.0,
             "Advies": "Geen alert"
         },
         {
