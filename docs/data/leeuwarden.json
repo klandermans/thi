@@ -2,50 +2,42 @@
     "station": "Leeuwarden",
     "lat": 53.22,
     "lon": 5.75,
-    "updated_at": "2026-08-12 10:02:02",
+    "updated_at": "2026-08-12 12:39:52",
     "forecast": [
         {
-            "Tijd": "12-08-2026 11:00",
-            "Temp_Out": 24.0,
-            "RH": 48.0,
-            "THI_Out": 70.2,
-            "THI_In": 71.5,
-            "Advies": "Geen alert"
-        },
-        {
-            "Tijd": "12-08-2026 12:00",
-            "Temp_Out": 23.0,
-            "RH": 42.0,
-            "THI_Out": 68.4,
-            "THI_In": 69.9,
-            "Advies": "Geen alert"
-        },
-        {
             "Tijd": "12-08-2026 13:00",
-            "Temp_Out": 24.0,
-            "RH": 37.0,
-            "THI_Out": 69.2,
-            "THI_In": 70.4,
-            "Advies": "Geen alert"
+            "Temp_Out": 25.0,
+            "RH": 43.0,
+            "THI_Out": 71.0,
+            "THI_In": 72.0,
+            "Advies": "Alert"
         },
         {
             "Tijd": "12-08-2026 14:00",
             "Temp_Out": 25.0,
-            "RH": 33.0,
-            "THI_Out": 69.9,
-            "THI_In": 70.9,
+            "RH": 36.0,
+            "THI_Out": 70.2,
+            "THI_In": 71.2,
             "Advies": "Geen alert"
         },
         {
             "Tijd": "12-08-2026 15:00",
             "Temp_Out": 26.0,
-            "RH": 30.0,
-            "THI_Out": 70.7,
-            "THI_In": 71.4,
+            "RH": 32.0,
+            "THI_Out": 70.9,
+            "THI_In": 71.7,
             "Advies": "Geen alert"
         },
         {
             "Tijd": "12-08-2026 16:00",
+            "Temp_Out": 26.0,
+            "RH": 29.0,
+            "THI_Out": 70.6,
+            "THI_In": 71.3,
+            "Advies": "Geen alert"
+        },
+        {
+            "Tijd": "12-08-2026 17:00",
             "Temp_Out": 26.0,
             "RH": 28.0,
             "THI_Out": 70.4,
@@ -53,7 +45,7 @@
             "Advies": "Geen alert"
         },
         {
-            "Tijd": "12-08-2026 17:00",
+            "Tijd": "12-08-2026 18:00",
             "Temp_Out": 26.0,
             "RH": 27.0,
             "THI_Out": 70.3,
@@ -61,35 +53,27 @@
             "Advies": "Geen alert"
         },
         {
-            "Tijd": "12-08-2026 18:00",
-            "Temp_Out": 26.0,
-            "RH": 26.0,
-            "THI_Out": 70.2,
-            "THI_In": 70.9,
-            "Advies": "Geen alert"
-        },
-        {
             "Tijd": "12-08-2026 19:00",
             "Temp_Out": 26.0,
-            "RH": 31.0,
-            "THI_Out": 70.8,
-            "THI_In": 71.5,
+            "RH": 32.0,
+            "THI_Out": 70.9,
+            "THI_In": 71.7,
             "Advies": "Geen alert"
         },
         {
             "Tijd": "12-08-2026 20:00",
             "Temp_Out": 25.0,
-            "RH": 35.0,
-            "THI_Out": 70.1,
-            "THI_In": 71.1,
+            "RH": 36.0,
+            "THI_Out": 70.2,
+            "THI_In": 71.2,
             "Advies": "Geen alert"
         },
         {
             "Tijd": "12-08-2026 21:00",
             "Temp_Out": 23.0,
-            "RH": 40.0,
-            "THI_Out": 68.2,
-            "THI_In": 69.7,
+            "RH": 41.0,
+            "THI_Out": 68.3,
+            "THI_In": 69.8,
             "Advies": "Geen alert"
         },
         {
