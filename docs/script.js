@@ -213,6 +213,12 @@ async function subscribeToNotifications() {
     setStatus('Service worker registreren...');
     serviceWorkerRegistration = serviceWorkerRegistration || await registerServiceWorker();
 
+    const existingSubscription = await serviceWorkerRegistration.pushManager.getSubscription();
+    if (existingSubscription) {
+        setStatus('Je bent al geabonneerd op notificaties in deze browser.');
+        return;
+    }
+
     setStatus('Notificatiepermissie aanvragen...');
     await requestNotificationPermission();
 
