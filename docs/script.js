@@ -19,10 +19,10 @@ async function init() {
     }
 }
 
-const SUPABASE_URL = 'https://yxyyhgksenptvdvvpqvr.supabase.co';
-const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inl4eXloZ2tzZW5wdHZkdnZwcXZyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzM0MTA4NjcsImV4cCI6MjA4ODk4Njg2N30.fKLtk_xSu-Tm8wzJZdcC5UD88Af-SXr0kjxpKn9lowg';
+const SUPABASE_URL = 'https://bfztqagofwviunbdbhqg.supabase.co';
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJmenRxYWdvZnd2aXVuYmRiaHFnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODY2MTI3MTgsImV4cCI6MjEwMjE4ODcxOH0.3V95oDSjONyn2-z_bdS9n2t97Tme66jhrzYQUts-xS8';
 const SUPABASE_TABLE = 'subscriptions';
-const PUBLIC_VAPID_KEY = 'BHRipgAwNL204yCr1YljpgyTUnUgK3bt8EAyf0k-QTb2iYRbFfI3l6WuO08UU8HcDD-REzJIn3B8ao6hVrDE4Ts';
+const PUBLIC_VAPID_KEY = 'BFLPEiu4aojiVWR_03OhHLz2nVRoRij-kQOtFAnZATXOINM1LiCNXFoRO-1h7WbtPoTTwgvddA1cVzG5FFBcTn4';
 
 const subscribeButton = document.getElementById('subscribe-button');
 const unsubscribeButton = document.getElementById('unsubscribe-button');
