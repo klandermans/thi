@@ -60,7 +60,7 @@ function urlBase64ToUint8Array(base64String) {
 
 function getApplicationServerKey() {
     if (PUBLIC_VAPID_KEY.startsWith('sb_publishable_')) {
-        throw new Error('PUBLIC_VAPID_KEY is nu een Supabase publishable key. Vul hier de echte web-push VAPID public key in.');
+        throw new Error('De meldingensleutel is verkeerd ingesteld.');
     }
 
     if (!/^[A-Za-z0-9_-]+$/.test(PUBLIC_VAPID_KEY)) {
@@ -176,7 +176,7 @@ async function saveSubscription(subscription) {
             return;
         }
         const errorBody = await response.text();
-        throw new Error(`Supabase opslag mislukt: ${response.status} ${errorBody}`);
+        throw new Error(`Opslaan van abonnement mislukt (${response.status}).`);
     }
 
     const rows = await response.json();
@@ -199,7 +199,7 @@ async function removeSubscriptionFromSupabase() {
 
     if (!response.ok) {
         const errorBody = await response.text();
-        throw new Error(`Supabase verwijdering mislukt: ${response.status} ${errorBody}`);
+        throw new Error(`Verwijderen van abonnement mislukt (${response.status}).`);
     }
 
     deleteCookie('supabase_row_id');
@@ -207,7 +207,7 @@ async function removeSubscriptionFromSupabase() {
 
 async function subscribeToNotifications() {
     if (!isConfigReady()) {
-        throw new Error('Vul eerst je Supabase- en VAPID-configuratie in bovenaan script.js in.');
+        throw new Error('De meldingenconfiguratie is nog niet ingesteld.');
     }
 
     setStatus('Service worker registreren...');
@@ -222,13 +222,13 @@ async function subscribeToNotifications() {
     setStatus('Notificatiepermissie aanvragen...');
     await requestNotificationPermission();
 
-    setStatus('Push subscription aanmaken...');
+    setStatus('Abonnement aanmaken...');
     const subscription = await createPushSubscription(serviceWorkerRegistration);
 
-    setStatus('Subscription naar Supabase sturen...');
+    setStatus('Abonnement opslaan...');
     await saveSubscription(subscription);
 
-    setStatus('Klaar. De browser is geabonneerd en de subscription staat in Supabase.');
+    setStatus('Klaar. Je bent aangemeld voor meldingen.');
 }
 
 async function unsubscribeFromNotifications() {
@@ -240,18 +240,18 @@ async function unsubscribeFromNotifications() {
     const subscription = await registration.pushManager.getSubscription();
 
     if (!subscription) {
-        setStatus('Er is geen actieve subscription om te verwijderen.');
+        setStatus('Er is geen actief abonnement om te verwijderen.');
         return;
     }
 
     const endpoint = subscription.endpoint;
-    setStatus('Subscription verwijderen uit de browser...');
+    setStatus('Abonnement verwijderen uit de browser...');
     await subscription.unsubscribe();
 
-    setStatus('Subscription verwijderen uit Supabase...');
+    setStatus('Abonnement verwijderen...');
     await removeSubscriptionFromSupabase();
 
-    setStatus('Klaar. Deze browser is gedesubscribed en uit Supabase verwijderd.');
+    setStatus('Klaar. Je bent afgemeld voor meldingen.');
 }
 
 async function initNotifications() {
