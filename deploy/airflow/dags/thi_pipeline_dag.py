@@ -1,17 +1,39 @@
+import os
+import sys
+
 import pendulum
 
 from airflow import DAG
 from airflow.models import Variable
 from airflow.providers.standard.operators.bash import BashOperator
+from airflow.providers.standard.operators.python import ExternalPythonOperator
 
 tmp = Variable.get("tmp", default_var="/tmp")
-
-ENV_SETUP = 'export AIRFLOW_VAR_ENV=BAR'
+venv_python = os.path.join(tmp, ".venv", "bin", "python")
 
 default_args = {
     "owner": "dairy-campus",
     "retries": 1,
 }
+
+
+def _run_generate_data(tmp, api_key):
+    os.chdir(tmp)
+    os.environ["METEOSERVER_API_KEY"] = api_key
+    sys.path.insert(0, tmp)
+    import generate_data
+
+    generate_data.main()
+
+
+def _run_send_notifications(tmp, env_vars):
+    os.chdir(tmp)
+    os.environ.update(env_vars)
+    sys.path.insert(0, tmp)
+    import send_notification
+
+    send_notification.main()
+
 
 with DAG(
     dag_id="thi_updater",
@@ -30,11 +52,11 @@ with DAG(
 
     secrets = Variable.get("thi_secrets", deserialize_json=True)
 
-    generate_data = BashOperator(
+    generate_data = ExternalPythonOperator(
         task_id="generate_data",
-        bash_command=f'cd "{tmp}" && ' + ENV_SETUP + " && python generate_data.py",
-        env={"METEOSERVER_API_KEY": secrets["METEOSERVER_API_KEY"]},
-        append_env=True,
+        python=venv_python,
+        python_callable=_run_generate_data,
+        op_kwargs={"tmp": tmp, "api_key": secrets["METEOSERVER_API_KEY"]},
     )
 
     commit_and_push = BashOperator(
@@ -49,17 +71,20 @@ git diff --quiet && git diff --staged --quiet || (git commit -m "update weather 
 """,
     )
 
-    send_notifications = BashOperator(
+    send_notifications = ExternalPythonOperator(
         task_id="send_notifications",
-        bash_command=f'cd "{tmp}" && ' + ENV_SETUP + " && python send_notification.py",
-        env={
-            "SUPABASE_URL": secrets["SUPABASE_URL"],
-            "SUPABASE_KEY": secrets["SUPABASE_KEY"],
-            "VAPID_PUBLIC_KEY": secrets["VAPID_PUBLIC_KEY"],
-            "VAPID_PRIVATE_KEY": secrets["VAPID_PRIVATE_KEY"],
-            "VAPID_SUBJECT": secrets["VAPID_SUBJECT"],
+        python=venv_python,
+        python_callable=_run_send_notifications,
+        op_kwargs={
+            "tmp": tmp,
+            "env_vars": {
+                "SUPABASE_URL": secrets["SUPABASE_URL"],
+                "SUPABASE_KEY": secrets["SUPABASE_KEY"],
+                "VAPID_PUBLIC_KEY": secrets["VAPID_PUBLIC_KEY"],
+                "VAPID_PRIVATE_KEY": secrets["VAPID_PRIVATE_KEY"],
+                "VAPID_SUBJECT": secrets["VAPID_SUBJECT"],
+            },
         },
-        append_env=True,
     )
 
     git_pull >> generate_data >> commit_and_push >> send_notifications

@@ -6,13 +6,7 @@ from datetime import datetime
 from zoneinfo import ZoneInfo
 
 # --- Configurations ---
-API_KEY = os.getenv("METEOSERVER_API_KEY")
-if not API_KEY:
-    print("Error: METEOSERVER_API_KEY environment variable not set.")
-    exit(1)
-
 OUTPUT_DIR = "docs/data"
-os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 STATIONS = {
     "Leeuwarden": {"lat": 53.22, "lon": 5.75},
@@ -41,9 +35,9 @@ def get_thi_alert(thi):
     """Bepaalt de alertstatus op basis van de THI (binnen)."""
     return "Alert" if thi >= 72 else "Geen alert"
 
-def fetch_and_process(name, lat, lon):
+def fetch_and_process(name, lat, lon, api_key):
     print(f"Fetching data for {name}...")
-    api_url = f"https://data.meteoserver.nl/api/uurverwachting.php?locatie={name}&key={API_KEY}"
+    api_url = f"https://data.meteoserver.nl/api/uurverwachting.php?locatie={name}&key={api_key}"
 
     try:
         r = requests.get(api_url)
@@ -101,10 +95,17 @@ def fetch_and_process(name, lat, lon):
         return None
 
 # --- Main ---
-if __name__ == "__main__":
+def main():
+    api_key = os.getenv("METEOSERVER_API_KEY")
+    if not api_key:
+        print("Error: METEOSERVER_API_KEY environment variable not set.")
+        sys.exit(1)
+
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
+
     results = []
     for name, coords in STATIONS.items():
-        res = fetch_and_process(name, coords["lat"], coords["lon"])
+        res = fetch_and_process(name, coords["lat"], coords["lon"], api_key)
         if res:
             results.append({"name": name, "file": name.lower().replace(" ", "_").replace("(", "").replace(")", "") + ".json"})
 
@@ -119,3 +120,7 @@ if __name__ == "__main__":
         json.dump(results, f, indent=4)
 
     print("Data update complete.")
+
+
+if __name__ == "__main__":
+    main()
