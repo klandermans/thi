@@ -18,6 +18,7 @@ node_modules/
 .env
 deploy/vm/.env
 deploy/airflow/.env
+deploy/vm/notes.txt
 
 # deploy
 deploy/vm/logs/
