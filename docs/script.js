@@ -19,10 +19,10 @@ async function init() {
     }
 }
 
-const SUPABASE_URL = 'https://yxyyhgksenptvdvvpqvr.supabase.co';
-const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inl4eXloZ2tzZW5wdHZkdnZwcXZyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzM0MTA4NjcsImV4cCI6MjA4ODk4Njg2N30.fKLtk_xSu-Tm8wzJZdcC5UD88Af-SXr0kjxpKn9lowg';
+const SUPABASE_URL = 'https://bfztqagofwviunbdbhqg.supabase.co';
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJmenRxYWdvZnd2aXVuYmRiaHFnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODY2MTI3MTgsImV4cCI6MjEwMjE4ODcxOH0.3V95oDSjONyn2-z_bdS9n2t97Tme66jhrzYQUts-xS8';
 const SUPABASE_TABLE = 'subscriptions';
-const PUBLIC_VAPID_KEY = 'BHRipgAwNL204yCr1YljpgyTUnUgK3bt8EAyf0k-QTb2iYRbFfI3l6WuO08UU8HcDD-REzJIn3B8ao6hVrDE4Ts';
+const PUBLIC_VAPID_KEY = 'BFLPEiu4aojiVWR_03OhHLz2nVRoRij-kQOtFAnZATXOINM1LiCNXFoRO-1h7WbtPoTTwgvddA1cVzG5FFBcTn4';
 
 const subscribeButton = document.getElementById('subscribe-button');
 const unsubscribeButton = document.getElementById('unsubscribe-button');
@@ -60,7 +60,7 @@ function urlBase64ToUint8Array(base64String) {
 
 function getApplicationServerKey() {
     if (PUBLIC_VAPID_KEY.startsWith('sb_publishable_')) {
-        throw new Error('PUBLIC_VAPID_KEY is nu een Supabase publishable key. Vul hier de echte web-push VAPID public key in.');
+        throw new Error('De meldingensleutel is verkeerd ingesteld.');
     }
 
     if (!/^[A-Za-z0-9_-]+$/.test(PUBLIC_VAPID_KEY)) {
@@ -176,7 +176,7 @@ async function saveSubscription(subscription) {
             return;
         }
         const errorBody = await response.text();
-        throw new Error(`Supabase opslag mislukt: ${response.status} ${errorBody}`);
+        throw new Error(`Opslaan van abonnement mislukt (${response.status}).`);
     }
 
     const rows = await response.json();
@@ -199,7 +199,7 @@ async function removeSubscriptionFromSupabase() {
 
     if (!response.ok) {
         const errorBody = await response.text();
-        throw new Error(`Supabase verwijdering mislukt: ${response.status} ${errorBody}`);
+        throw new Error(`Verwijderen van abonnement mislukt (${response.status}).`);
     }
 
     deleteCookie('supabase_row_id');
@@ -207,22 +207,28 @@ async function removeSubscriptionFromSupabase() {
 
 async function subscribeToNotifications() {
     if (!isConfigReady()) {
-        throw new Error('Vul eerst je Supabase- en VAPID-configuratie in bovenaan script.js in.');
+        throw new Error('De meldingenconfiguratie is nog niet ingesteld.');
     }
 
     setStatus('Service worker registreren...');
     serviceWorkerRegistration = serviceWorkerRegistration || await registerServiceWorker();
 
+    const existingSubscription = await serviceWorkerRegistration.pushManager.getSubscription();
+    if (existingSubscription) {
+        setStatus('Je bent al geabonneerd op notificaties in deze browser.');
+        return;
+    }
+
     setStatus('Notificatiepermissie aanvragen...');
     await requestNotificationPermission();
 
-    setStatus('Push subscription aanmaken...');
+    setStatus('Abonnement aanmaken...');
     const subscription = await createPushSubscription(serviceWorkerRegistration);
 
-    setStatus('Subscription naar Supabase sturen...');
+    setStatus('Abonnement opslaan...');
     await saveSubscription(subscription);
 
-    setStatus('Klaar. De browser is geabonneerd en de subscription staat in Supabase.');
+    setStatus('Klaar. Je bent aangemeld voor meldingen.');
 }
 
 async function unsubscribeFromNotifications() {
@@ -234,18 +240,18 @@ async function unsubscribeFromNotifications() {
     const subscription = await registration.pushManager.getSubscription();
 
     if (!subscription) {
-        setStatus('Er is geen actieve subscription om te verwijderen.');
+        setStatus('Er is geen actief abonnement om te verwijderen.');
         return;
     }
 
     const endpoint = subscription.endpoint;
-    setStatus('Subscription verwijderen uit de browser...');
+    setStatus('Abonnement verwijderen uit de browser...');
     await subscription.unsubscribe();
 
-    setStatus('Subscription verwijderen uit Supabase...');
+    setStatus('Abonnement verwijderen...');
     await removeSubscriptionFromSupabase();
 
-    setStatus('Klaar. Deze browser is gedesubscribed en uit Supabase verwijderd.');
+    setStatus('Klaar. Je bent afgemeld voor meldingen.');
 }
 
 async function initNotifications() {
@@ -371,7 +377,7 @@ function renderChart(forecast) {
             { type: 'rect', xref: 'paper', yref: 'y', x0: 0, x1: 1, y0: 78, y1: 82, fillcolor: 'red', opacity: 0.2, line: {width: 0}, layer: 'below' },
             { type: 'rect', xref: 'paper', yref: 'y', x0: 0, x1: 1, y0: 82, y1: 100, fillcolor: 'darkred', opacity: 0.2, line: {width: 0}, layer: 'below' }
         ],
-        height: 600,
+        height: 900,
         // width: 800,
     };
 

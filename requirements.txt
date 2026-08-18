@@ -3,3 +3,5 @@ requests
 xarray
 streamlit
 geopy
+supabase
+pywebpush

@@ -1,0 +1,28 @@
+# OS
+.DS_Store
+
+# editor
+.vscode/
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# node
+node_modules/
+
+# session data
+.wwebjs_auth/
+.wwebjs_cache/
+
+# secret
+.env
+deploy/vm/.env
+deploy/airflow/.env
+deploy/vm/notes.txt
+
+# deploy
+deploy/vm/logs/
+deploy/airflow/logs/
