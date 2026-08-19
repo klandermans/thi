@@ -19,8 +19,8 @@ async function init() {
     }
 }
 
-const SUPABASE_URL = 'https://bfztqagofwviunbdbhqg.supabase.co';
-const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJmenRxYWdvZnd2aXVuYmRiaHFnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODY2MTI3MTgsImV4cCI6MjEwMjE4ODcxOH0.3V95oDSjONyn2-z_bdS9n2t97Tme66jhrzYQUts-xS8';
+const SUPABASE_URL = 'https://pbhuiiijnjvcxdipvivv.supabase.co';
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBiaHVpaWlqbmp2Y3hkaXB2aXZ2Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc4NjY5ODA4NywiZXhwIjoyMTAyMjc0MDg3fQ.kzPJTyVk1y9XUXA5L_8Kfyjbp5rxLfYVplHEBvBY6pA';
 const SUPABASE_TABLE = 'subscriptions';
 const PUBLIC_VAPID_KEY = 'BFLPEiu4aojiVWR_03OhHLz2nVRoRij-kQOtFAnZATXOINM1LiCNXFoRO-1h7WbtPoTTwgvddA1cVzG5FFBcTn4';
 
