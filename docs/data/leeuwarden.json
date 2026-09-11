@@ -2,66 +2,26 @@
     "station": "Leeuwarden",
     "lat": 53.22,
     "lon": 5.75,
-    "updated_at": "2026-09-11 14:41:04",
+    "updated_at": "2026-09-11 18:44:15",
     "forecast": [
-        {
-            "Tijd": "11-09-2026 15:00",
-            "Temp_Out": 19.0,
-            "RH": 86.0,
-            "THI_Out": 65.6,
-            "THI_In": 68.9,
-            "Advies": "Geen alert"
-        },
-        {
-            "Tijd": "11-09-2026 16:00",
-            "Temp_Out": 19.0,
-            "RH": 83.0,
-            "THI_Out": 65.4,
-            "THI_In": 68.7,
-            "Advies": "Geen alert"
-        },
-        {
-            "Tijd": "11-09-2026 17:00",
-            "Temp_Out": 19.0,
-            "RH": 83.0,
-            "THI_Out": 65.4,
-            "THI_In": 68.7,
-            "Advies": "Geen alert"
-        },
-        {
-            "Tijd": "11-09-2026 18:00",
-            "Temp_Out": 19.0,
-            "RH": 82.0,
-            "THI_Out": 65.4,
-            "THI_In": 68.6,
-            "Advies": "Geen alert"
-        },
         {
             "Tijd": "11-09-2026 19:00",
             "Temp_Out": 18.0,
-            "RH": 82.0,
-            "THI_Out": 63.8,
-            "THI_In": 67.3,
+            "RH": 78.0,
+            "THI_Out": 63.6,
+            "THI_In": 67.1,
             "Advies": "Geen alert"
         },
         {
             "Tijd": "11-09-2026 20:00",
             "Temp_Out": 17.0,
-            "RH": 82.0,
+            "RH": 80.0,
             "THI_Out": 62.1,
-            "THI_In": 66.0,
+            "THI_In": 65.9,
             "Advies": "Geen alert"
         },
         {
             "Tijd": "11-09-2026 21:00",
-            "Temp_Out": 17.0,
-            "RH": 82.0,
-            "THI_Out": 62.1,
-            "THI_In": 66.0,
-            "Advies": "Geen alert"
-        },
-        {
-            "Tijd": "11-09-2026 22:00",
             "Temp_Out": 17.0,
             "RH": 81.0,
             "THI_Out": 62.1,
@@ -69,9 +29,17 @@
             "Advies": "Geen alert"
         },
         {
+            "Tijd": "11-09-2026 22:00",
+            "Temp_Out": 17.0,
+            "RH": 80.0,
+            "THI_Out": 62.1,
+            "THI_In": 65.9,
+            "Advies": "Geen alert"
+        },
+        {
             "Tijd": "11-09-2026 23:00",
             "Temp_Out": 17.0,
-            "RH": 81.0,
+            "RH": 80.0,
             "THI_Out": 62.1,
             "THI_In": 65.9,
             "Advies": "Geen alert"
