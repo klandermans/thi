@@ -2,62 +2,22 @@
     "station": "Leeuwarden",
     "lat": 53.22,
     "lon": 5.75,
-    "updated_at": "2026-10-20 14:41:02",
+    "updated_at": "2026-10-20 19:29:15",
     "forecast": [
-        {
-            "Tijd": "20-10-2026 15:00",
-            "Temp_Out": 10.0,
-            "RH": 62.0,
-            "THI_Out": 51.7,
-            "THI_In": 56.9,
-            "Advies": "Geen alert"
-        },
-        {
-            "Tijd": "20-10-2026 16:00",
-            "Temp_Out": 10.0,
-            "RH": 63.0,
-            "THI_Out": 51.6,
-            "THI_In": 56.9,
-            "Advies": "Geen alert"
-        },
-        {
-            "Tijd": "20-10-2026 17:00",
-            "Temp_Out": 10.0,
-            "RH": 67.0,
-            "THI_Out": 51.5,
-            "THI_In": 56.9,
-            "Advies": "Geen alert"
-        },
-        {
-            "Tijd": "20-10-2026 18:00",
-            "Temp_Out": 9.0,
-            "RH": 70.0,
-            "THI_Out": 49.8,
-            "THI_In": 55.7,
-            "Advies": "Geen alert"
-        },
-        {
-            "Tijd": "20-10-2026 19:00",
-            "Temp_Out": 8.0,
-            "RH": 74.0,
-            "THI_Out": 48.1,
-            "THI_In": 54.3,
-            "Advies": "Geen alert"
-        },
         {
             "Tijd": "20-10-2026 20:00",
             "Temp_Out": 7.0,
-            "RH": 78.0,
+            "RH": 79.0,
             "THI_Out": 46.2,
-            "THI_In": 53.0,
+            "THI_In": 52.9,
             "Advies": "Geen alert"
         },
         {
             "Tijd": "20-10-2026 21:00",
             "Temp_Out": 7.0,
-            "RH": 81.0,
-            "THI_Out": 46.0,
-            "THI_In": 52.9,
+            "RH": 82.0,
+            "THI_Out": 45.9,
+            "THI_In": 52.8,
             "Advies": "Geen alert"
         },
         {
