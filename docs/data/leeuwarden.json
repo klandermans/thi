@@ -2,149 +2,13 @@
     "station": "Leeuwarden",
     "lat": 53.22,
     "lon": 5.75,
-    "updated_at": "2026-11-05 15:55:44",
+    "updated_at": "2026-11-06 08:41:03",
     "forecast": [
-        {
-            "Tijd": "05-11-2026 16:00",
-            "Temp_Out": 9.0,
-            "RH": 77.0,
-            "THI_Out": 49.4,
-            "THI_In": 55.5,
-            "Advies": "Geen alert"
-        },
-        {
-            "Tijd": "05-11-2026 17:00",
-            "Temp_Out": 8.0,
-            "RH": 83.0,
-            "THI_Out": 47.5,
-            "THI_In": 54.1,
-            "Advies": "Geen alert"
-        },
-        {
-            "Tijd": "05-11-2026 18:00",
-            "Temp_Out": 7.0,
-            "RH": 87.0,
-            "THI_Out": 45.6,
-            "THI_In": 52.7,
-            "Advies": "Geen alert"
-        },
-        {
-            "Tijd": "05-11-2026 19:00",
-            "Temp_Out": 6.0,
-            "RH": 90.0,
-            "THI_Out": 43.6,
-            "THI_In": 51.2,
-            "Advies": "Geen alert"
-        },
-        {
-            "Tijd": "05-11-2026 20:00",
-            "Temp_Out": 5.0,
-            "RH": 92.0,
-            "THI_Out": 41.8,
-            "THI_In": 49.8,
-            "Advies": "Geen alert"
-        },
-        {
-            "Tijd": "05-11-2026 21:00",
-            "Temp_Out": 5.0,
-            "RH": 93.0,
-            "THI_Out": 41.7,
-            "THI_In": 49.7,
-            "Advies": "Geen alert"
-        },
-        {
-            "Tijd": "05-11-2026 22:00",
-            "Temp_Out": 5.0,
-            "RH": 94.0,
-            "THI_Out": 41.6,
-            "THI_In": 49.7,
-            "Advies": "Geen alert"
-        },
-        {
-            "Tijd": "05-11-2026 23:00",
-            "Temp_Out": 4.0,
-            "RH": 95.0,
-            "THI_Out": 39.7,
-            "THI_In": 48.2,
-            "Advies": "Geen alert"
-        },
-        {
-            "Tijd": "06-11-2026 00:00",
-            "Temp_Out": 4.0,
-            "RH": 95.0,
-            "THI_Out": 39.7,
-            "THI_In": 48.2,
-            "Advies": "Geen alert"
-        },
-        {
-            "Tijd": "06-11-2026 01:00",
-            "Temp_Out": 4.0,
-            "RH": 95.0,
-            "THI_Out": 39.7,
-            "THI_In": 48.2,
-            "Advies": "Geen alert"
-        },
-        {
-            "Tijd": "06-11-2026 02:00",
-            "Temp_Out": 4.0,
-            "RH": 95.0,
-            "THI_Out": 39.7,
-            "THI_In": 48.2,
-            "Advies": "Geen alert"
-        },
-        {
-            "Tijd": "06-11-2026 03:00",
-            "Temp_Out": 3.0,
-            "RH": 95.0,
-            "THI_Out": 38.0,
-            "THI_In": 46.8,
-            "Advies": "Geen alert"
-        },
-        {
-            "Tijd": "06-11-2026 04:00",
-            "Temp_Out": 3.0,
-            "RH": 96.0,
-            "THI_Out": 37.9,
-            "THI_In": 46.7,
-            "Advies": "Geen alert"
-        },
-        {
-            "Tijd": "06-11-2026 05:00",
-            "Temp_Out": 2.0,
-            "RH": 96.0,
-            "THI_Out": 36.1,
-            "THI_In": 45.3,
-            "Advies": "Geen alert"
-        },
-        {
-            "Tijd": "06-11-2026 06:00",
-            "Temp_Out": 2.0,
-            "RH": 96.0,
-            "THI_Out": 36.1,
-            "THI_In": 45.3,
-            "Advies": "Geen alert"
-        },
-        {
-            "Tijd": "06-11-2026 07:00",
-            "Temp_Out": 2.0,
-            "RH": 96.0,
-            "THI_Out": 36.1,
-            "THI_In": 45.3,
-            "Advies": "Geen alert"
-        },
-        {
-            "Tijd": "06-11-2026 08:00",
-            "Temp_Out": 2.0,
-            "RH": 95.0,
-            "THI_Out": 36.2,
-            "THI_In": 45.4,
-            "Advies": "Geen alert"
-        },
         {
             "Tijd": "06-11-2026 09:00",
             "Temp_Out": 3.0,
-            "RH": 94.0,
-            "THI_Out": 38.1,
+            "RH": 95.0,
+            "THI_Out": 38.0,
             "THI_In": 46.8,
             "Advies": "Geen alert"
         },
@@ -167,21 +31,29 @@
         {
             "Tijd": "06-11-2026 12:00",
             "Temp_Out": 6.0,
-            "RH": 81.0,
-            "THI_Out": 44.4,
+            "RH": 80.0,
+            "THI_Out": 44.5,
             "THI_In": 51.6,
             "Advies": "Geen alert"
         },
         {
             "Tijd": "06-11-2026 13:00",
             "Temp_Out": 7.0,
-            "RH": 76.0,
+            "RH": 75.0,
             "THI_Out": 46.4,
-            "THI_In": 53.0,
+            "THI_In": 53.1,
             "Advies": "Geen alert"
         },
         {
             "Tijd": "06-11-2026 14:00",
+            "Temp_Out": 8.0,
+            "RH": 73.0,
+            "THI_Out": 48.1,
+            "THI_In": 54.4,
+            "Advies": "Geen alert"
+        },
+        {
+            "Tijd": "06-11-2026 15:00",
             "Temp_Out": 8.0,
             "RH": 74.0,
             "THI_Out": 48.1,
@@ -189,51 +61,43 @@
             "Advies": "Geen alert"
         },
         {
-            "Tijd": "06-11-2026 15:00",
+            "Tijd": "06-11-2026 16:00",
             "Temp_Out": 8.0,
-            "RH": 75.0,
-            "THI_Out": 48.0,
+            "RH": 77.0,
+            "THI_Out": 47.9,
             "THI_In": 54.3,
             "Advies": "Geen alert"
         },
         {
-            "Tijd": "06-11-2026 16:00",
+            "Tijd": "06-11-2026 17:00",
             "Temp_Out": 7.0,
-            "RH": 79.0,
-            "THI_Out": 46.2,
+            "RH": 81.0,
+            "THI_Out": 46.0,
             "THI_In": 52.9,
             "Advies": "Geen alert"
         },
         {
-            "Tijd": "06-11-2026 17:00",
-            "Temp_Out": 6.0,
-            "RH": 84.0,
-            "THI_Out": 44.1,
-            "THI_In": 51.5,
-            "Advies": "Geen alert"
-        },
-        {
             "Tijd": "06-11-2026 18:00",
-            "Temp_Out": 5.0,
-            "RH": 88.0,
-            "THI_Out": 42.1,
-            "THI_In": 49.9,
+            "Temp_Out": 6.0,
+            "RH": 85.0,
+            "THI_Out": 44.1,
+            "THI_In": 51.4,
             "Advies": "Geen alert"
         },
         {
             "Tijd": "06-11-2026 19:00",
-            "Temp_Out": 4.0,
-            "RH": 91.0,
-            "THI_Out": 40.1,
-            "THI_In": 48.4,
+            "Temp_Out": 5.0,
+            "RH": 89.0,
+            "THI_Out": 42.0,
+            "THI_In": 49.9,
             "Advies": "Geen alert"
         },
         {
             "Tijd": "06-11-2026 20:00",
             "Temp_Out": 4.0,
-            "RH": 93.0,
-            "THI_Out": 39.9,
-            "THI_In": 48.3,
+            "RH": 92.0,
+            "THI_Out": 40.0,
+            "THI_In": 48.4,
             "Advies": "Geen alert"
         },
         {
@@ -247,101 +111,13 @@
         {
             "Tijd": "06-11-2026 22:00",
             "Temp_Out": 4.0,
-            "RH": 95.0,
-            "THI_Out": 39.7,
+            "RH": 94.0,
+            "THI_Out": 39.8,
             "THI_In": 48.2,
             "Advies": "Geen alert"
         },
         {
             "Tijd": "06-11-2026 23:00",
-            "Temp_Out": 4.0,
-            "RH": 95.0,
-            "THI_Out": 39.7,
-            "THI_In": 48.2,
-            "Advies": "Geen alert"
-        },
-        {
-            "Tijd": "07-11-2026 00:00",
-            "Temp_Out": 4.0,
-            "RH": 95.0,
-            "THI_Out": 39.7,
-            "THI_In": 48.2,
-            "Advies": "Geen alert"
-        },
-        {
-            "Tijd": "07-11-2026 01:00",
-            "Temp_Out": 4.0,
-            "RH": 96.0,
-            "THI_Out": 39.6,
-            "THI_In": 48.1,
-            "Advies": "Geen alert"
-        },
-        {
-            "Tijd": "07-11-2026 02:00",
-            "Temp_Out": 4.0,
-            "RH": 96.0,
-            "THI_Out": 39.6,
-            "THI_In": 48.1,
-            "Advies": "Geen alert"
-        },
-        {
-            "Tijd": "07-11-2026 03:00",
-            "Temp_Out": 4.0,
-            "RH": 95.0,
-            "THI_Out": 39.7,
-            "THI_In": 48.2,
-            "Advies": "Geen alert"
-        },
-        {
-            "Tijd": "07-11-2026 04:00",
-            "Temp_Out": 4.0,
-            "RH": 95.0,
-            "THI_Out": 39.7,
-            "THI_In": 48.2,
-            "Advies": "Geen alert"
-        },
-        {
-            "Tijd": "07-11-2026 05:00",
-            "Temp_Out": 4.0,
-            "RH": 95.0,
-            "THI_Out": 39.7,
-            "THI_In": 48.2,
-            "Advies": "Geen alert"
-        },
-        {
-            "Tijd": "07-11-2026 06:00",
-            "Temp_Out": 4.0,
-            "RH": 95.0,
-            "THI_Out": 39.7,
-            "THI_In": 48.2,
-            "Advies": "Geen alert"
-        },
-        {
-            "Tijd": "07-11-2026 07:00",
-            "Temp_Out": 4.0,
-            "RH": 95.0,
-            "THI_Out": 39.7,
-            "THI_In": 48.2,
-            "Advies": "Geen alert"
-        },
-        {
-            "Tijd": "07-11-2026 08:00",
-            "Temp_Out": 4.0,
-            "RH": 95.0,
-            "THI_Out": 39.7,
-            "THI_In": 48.2,
-            "Advies": "Geen alert"
-        },
-        {
-            "Tijd": "07-11-2026 09:00",
-            "Temp_Out": 4.0,
-            "RH": 95.0,
-            "THI_Out": 39.7,
-            "THI_In": 48.2,
-            "Advies": "Geen alert"
-        },
-        {
-            "Tijd": "07-11-2026 10:00",
             "Temp_Out": 4.0,
             "RH": 94.0,
             "THI_Out": 39.8,
@@ -349,35 +125,123 @@
             "Advies": "Geen alert"
         },
         {
+            "Tijd": "07-11-2026 00:00",
+            "Temp_Out": 4.0,
+            "RH": 94.0,
+            "THI_Out": 39.8,
+            "THI_In": 48.2,
+            "Advies": "Geen alert"
+        },
+        {
+            "Tijd": "07-11-2026 01:00",
+            "Temp_Out": 4.0,
+            "RH": 94.0,
+            "THI_Out": 39.8,
+            "THI_In": 48.2,
+            "Advies": "Geen alert"
+        },
+        {
+            "Tijd": "07-11-2026 02:00",
+            "Temp_Out": 4.0,
+            "RH": 94.0,
+            "THI_Out": 39.8,
+            "THI_In": 48.2,
+            "Advies": "Geen alert"
+        },
+        {
+            "Tijd": "07-11-2026 03:00",
+            "Temp_Out": 4.0,
+            "RH": 94.0,
+            "THI_Out": 39.8,
+            "THI_In": 48.2,
+            "Advies": "Geen alert"
+        },
+        {
+            "Tijd": "07-11-2026 04:00",
+            "Temp_Out": 4.0,
+            "RH": 94.0,
+            "THI_Out": 39.8,
+            "THI_In": 48.2,
+            "Advies": "Geen alert"
+        },
+        {
+            "Tijd": "07-11-2026 05:00",
+            "Temp_Out": 4.0,
+            "RH": 94.0,
+            "THI_Out": 39.8,
+            "THI_In": 48.2,
+            "Advies": "Geen alert"
+        },
+        {
+            "Tijd": "07-11-2026 06:00",
+            "Temp_Out": 4.0,
+            "RH": 94.0,
+            "THI_Out": 39.8,
+            "THI_In": 48.2,
+            "Advies": "Geen alert"
+        },
+        {
+            "Tijd": "07-11-2026 07:00",
+            "Temp_Out": 3.0,
+            "RH": 95.0,
+            "THI_Out": 38.0,
+            "THI_In": 46.8,
+            "Advies": "Geen alert"
+        },
+        {
+            "Tijd": "07-11-2026 08:00",
+            "Temp_Out": 3.0,
+            "RH": 95.0,
+            "THI_Out": 38.0,
+            "THI_In": 46.8,
+            "Advies": "Geen alert"
+        },
+        {
+            "Tijd": "07-11-2026 09:00",
+            "Temp_Out": 3.0,
+            "RH": 94.0,
+            "THI_Out": 38.1,
+            "THI_In": 46.8,
+            "Advies": "Geen alert"
+        },
+        {
+            "Tijd": "07-11-2026 10:00",
+            "Temp_Out": 3.0,
+            "RH": 93.0,
+            "THI_Out": 38.2,
+            "THI_In": 46.9,
+            "Advies": "Geen alert"
+        },
+        {
             "Tijd": "07-11-2026 11:00",
             "Temp_Out": 4.0,
-            "RH": 91.0,
-            "THI_Out": 40.1,
-            "THI_In": 48.4,
+            "RH": 90.0,
+            "THI_Out": 40.2,
+            "THI_In": 48.5,
             "Advies": "Geen alert"
         },
         {
             "Tijd": "07-11-2026 12:00",
             "Temp_Out": 5.0,
-            "RH": 88.0,
-            "THI_Out": 42.1,
-            "THI_In": 49.9,
+            "RH": 87.0,
+            "THI_Out": 42.2,
+            "THI_In": 50.0,
             "Advies": "Geen alert"
         },
         {
             "Tijd": "07-11-2026 13:00",
             "Temp_Out": 5.0,
-            "RH": 85.0,
-            "THI_Out": 42.4,
+            "RH": 84.0,
+            "THI_Out": 42.5,
             "THI_In": 50.1,
             "Advies": "Geen alert"
         },
         {
             "Tijd": "07-11-2026 14:00",
             "Temp_Out": 6.0,
-            "RH": 82.0,
-            "THI_Out": 44.3,
-            "THI_In": 51.5,
+            "RH": 81.0,
+            "THI_Out": 44.4,
+            "THI_In": 51.6,
             "Advies": "Geen alert"
         },
         {
@@ -398,10 +262,122 @@
         },
         {
             "Tijd": "07-11-2026 17:00",
-            "Temp_Out": 5.0,
+            "Temp_Out": 6.0,
             "RH": 85.0,
-            "THI_Out": 42.4,
-            "THI_In": 50.1,
+            "THI_Out": 44.1,
+            "THI_In": 51.4,
+            "Advies": "Geen alert"
+        },
+        {
+            "Tijd": "07-11-2026 18:00",
+            "Temp_Out": 5.0,
+            "RH": 86.0,
+            "THI_Out": 42.3,
+            "THI_In": 50.0,
+            "Advies": "Geen alert"
+        },
+        {
+            "Tijd": "07-11-2026 19:00",
+            "Temp_Out": 5.0,
+            "RH": 88.0,
+            "THI_Out": 42.1,
+            "THI_In": 49.9,
+            "Advies": "Geen alert"
+        },
+        {
+            "Tijd": "07-11-2026 20:00",
+            "Temp_Out": 5.0,
+            "RH": 90.0,
+            "THI_Out": 41.9,
+            "THI_In": 49.8,
+            "Advies": "Geen alert"
+        },
+        {
+            "Tijd": "07-11-2026 21:00",
+            "Temp_Out": 4.0,
+            "RH": 92.0,
+            "THI_Out": 40.0,
+            "THI_In": 48.4,
+            "Advies": "Geen alert"
+        },
+        {
+            "Tijd": "07-11-2026 22:00",
+            "Temp_Out": 4.0,
+            "RH": 93.0,
+            "THI_Out": 39.9,
+            "THI_In": 48.3,
+            "Advies": "Geen alert"
+        },
+        {
+            "Tijd": "07-11-2026 23:00",
+            "Temp_Out": 4.0,
+            "RH": 93.0,
+            "THI_Out": 39.9,
+            "THI_In": 48.3,
+            "Advies": "Geen alert"
+        },
+        {
+            "Tijd": "08-11-2026 00:00",
+            "Temp_Out": 4.0,
+            "RH": 96.0,
+            "THI_Out": 39.6,
+            "THI_In": 48.1,
+            "Advies": "Geen alert"
+        },
+        {
+            "Tijd": "08-11-2026 01:00",
+            "Temp_Out": 5.0,
+            "RH": 97.0,
+            "THI_Out": 41.3,
+            "THI_In": 49.5,
+            "Advies": "Geen alert"
+        },
+        {
+            "Tijd": "08-11-2026 02:00",
+            "Temp_Out": 5.0,
+            "RH": 98.0,
+            "THI_Out": 41.2,
+            "THI_In": 49.5,
+            "Advies": "Geen alert"
+        },
+        {
+            "Tijd": "08-11-2026 03:00",
+            "Temp_Out": 6.0,
+            "RH": 97.0,
+            "THI_Out": 43.1,
+            "THI_In": 50.9,
+            "Advies": "Geen alert"
+        },
+        {
+            "Tijd": "08-11-2026 04:00",
+            "Temp_Out": 6.0,
+            "RH": 93.0,
+            "THI_Out": 43.4,
+            "THI_In": 51.1,
+            "Advies": "Geen alert"
+        },
+        {
+            "Tijd": "08-11-2026 05:00",
+            "Temp_Out": 5.0,
+            "RH": 93.0,
+            "THI_Out": 41.7,
+            "THI_In": 49.7,
+            "Advies": "Geen alert"
+        },
+        {
+            "Tijd": "08-11-2026 06:00",
+            "Temp_Out": 4.0,
+            "RH": 92.0,
+            "THI_Out": 40.0,
+            "THI_In": 48.4,
+            "Advies": "Geen alert"
+        },
+        {
+            "Tijd": "08-11-2026 07:00",
+            "Temp_Out": 4.0,
+            "RH": 92.0,
+            "THI_Out": 40.0,
+            "THI_In": 48.4,
             "Advies": "Geen alert"
         }
     ]
