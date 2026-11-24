@@ -2,38 +2,14 @@
     "station": "Leeuwarden",
     "lat": 53.22,
     "lon": 5.75,
-    "updated_at": "2026-11-24 08:41:03",
+    "updated_at": "2026-11-24 11:41:02",
     "forecast": [
-        {
-            "Tijd": "24-11-2026 09:00",
-            "Temp_Out": -1.0,
-            "RH": 89.0,
-            "THI_Out": 31.9,
-            "THI_In": 41.7,
-            "Advies": "Geen alert"
-        },
-        {
-            "Tijd": "24-11-2026 10:00",
-            "Temp_Out": -0.0,
-            "RH": 86.0,
-            "THI_Out": 34.0,
-            "THI_In": 43.3,
-            "Advies": "Geen alert"
-        },
-        {
-            "Tijd": "24-11-2026 11:00",
-            "Temp_Out": 1.0,
-            "RH": 82.0,
-            "THI_Out": 36.2,
-            "THI_In": 45.0,
-            "Advies": "Geen alert"
-        },
         {
             "Tijd": "24-11-2026 12:00",
             "Temp_Out": 2.0,
-            "RH": 79.0,
-            "THI_Out": 38.2,
-            "THI_In": 46.5,
+            "RH": 78.0,
+            "THI_Out": 38.3,
+            "THI_In": 46.6,
             "Advies": "Geen alert"
         },
         {
